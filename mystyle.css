@@ -1,0 +1,94 @@
+body{
+    background-color: #ffffff00;
+}
+
+.be{
+    font-family: 'Times New Roman', serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #000;
+  flex: 1;
+  text-align: center;
+}
+
+.slider {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* จำนวนรูป x 100% */
+  animation: slide 15s infinite;;
+}
+
+.slides img {
+  width: 33.3333%; /* 100% ÷ จำนวนรูป */
+  height: 400px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-33.3333%); }
+  66%  { transform: translateX(-66.6666%); }
+  100% { transform: translateX(0%); }
+}
+
+
+.one{
+     font-family: 'Times New Roman', serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #000;
+  flex: 1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.two{
+     font-family: 'Times New Roman', serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #000;
+  flex: 1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.link{
+    font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 8px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.product h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
